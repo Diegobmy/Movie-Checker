@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.diego.moviecheck.Main">
+
+    <!--display the temperature-->
+    <ImageView
+        android:id="@+id/MPoster"
+        android:layout_width="103dp"
+        android:layout_height="145dp"
+        android:layout_marginLeft="22dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="65dp" />
+    <!--display the temperature-->
+    <TextView
+        android:id="@+id/MTitle"
+        android:layout_width="222dp"
+        android:layout_height="144dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="66dp"
+        android:layout_weight="1"
+        android:ellipsize="none"
+        android:gravity="center_horizontal"
+        android:maxLines="100"
+        android:scrollHorizontally="false"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toRightOf="@+id/MPoster"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--display the weather description-->
+    <TextView
+        android:id="@+id/MDesc"
+        android:layout_width="306dp"
+        android:layout_height="268dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="227dp"
+        android:gravity="left"
+        android:textSize="18sp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/MQuery"
+        android:layout_width="273dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="6dp"
+        android:ems="10"
+        android:hint="Movie"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/MSearch"
+        android:layout_width="77dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="6dp"
+        android:text="Search"
+        android:textSize="13sp"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toRightOf="@+id/MQuery"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
